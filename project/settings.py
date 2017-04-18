@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django-extensions',
+    'django_extensions',
     'rest_framework',
     'corsheaders',
     'todo'
@@ -80,12 +80,12 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql.psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'casino_locater',
-        'USER': 'serhii',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': ''
+        'USER': '',
+        # 'PASSWORD': '',
+        # 'HOST': 'localhost',
+        # 'PORT': ''
     }
 }
 
