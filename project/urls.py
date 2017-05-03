@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from todo.views import ListCreateCasinos
+from django.views.generic import TemplateView
+from todo.views import ListCreateCasinos, ListCreateTodos
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^api/casinos', ListCreateCasinos.as_view(), name='list_casinos')
+    # url(r'^$', TemplateView.as_view(template_name='index.html')),
+    url(r'^$', TemplateView.as_view(template_name="index.html")),
+    url(r'^api/casinos', ListCreateCasinos.as_view(), name='list_casinos'),
+    url(r'^api/todos', ListCreateTodos.as_view(), name='list_todos')
 ]

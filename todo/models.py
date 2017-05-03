@@ -13,3 +13,13 @@ class Casino(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Todo(models.Model):
+    title = models.CharField(max_length=255)
+    desc = models.TextField(max_length=1024)
+    date = models.DateField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title

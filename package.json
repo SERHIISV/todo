@@ -1,0 +1,32 @@
+{
+  "name": "react_course_01_07",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "watch": "node server.js",
+    "api": "node simple_api/server.js",
+    "dev": "webpack-dev-server --hot --inline"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "webpack": "^1.15.0",
+    "webpack-bundle-tracker": "^0.2.0",
+    "webpack-dev-server": "^1.16.5"
+  },
+  "dependencies": {
+    "react": "^15.2.0",
+    "react-dom": "^15.2.0"
+  }
+}
